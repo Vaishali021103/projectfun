@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+:root{
+  --turquoise: #30D5C8;
+}
+
+* {
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+*::selection{
+  background: var(--turquoise);
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 4.5rem;
+  right: 1rem;
+  z-index: 1000;
+  font-size: 2.5rem;
+  background: rgba(30, 202, 188, 0.1);
+  color: var(--green);
+  border-radius: 0.3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1.5rem;
+  display: none;
+}
+
+.scroll-top:hover {
+  background: var(--turquoise);
+  color: #fff;
+}
+
+.list a{
+  list-style: none;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding-right: 9px 0;
+  margin-right: 9px;
+  color: rgb(19, 87, 189);
+  transition: 0.2s ease-out;
+  align-items: flex-start;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  margin: 5px;
+  padding: 5px;
+  background: whitesmoke;
+  box-shadow: 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+}
+
+.icons a {
+  list-style: none;
+  font-weight: 800;
+  text-decoration: none;
+  padding-right: 9px 0;
+  margin-left: 9px;
+  transition: 0.2s ease-out;
+}
+
+.fa {
+  font-size: 50px;
+  width: 15px;
+  height: 15px;
+  text-decoration: none;
+}
+
+.fa-facebook {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: linear-gradient(red, pink);
+  color: white;
+}
+
+.fa-twitter {
+  background: #007bb5;
+  color: white;
+}
+
+.top2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 5px;
+}
+
+.logo img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
+}
+
+.logo h3 {
+  position: absolute;
+  left: -4px;
+  top: 70px;
+  color: rgb(12, 122, 111);
+  background-color: rgb(231, 231, 68);
+}
+
+.fa-user-o {
+  color: gold;
+  width: 50px;
+  top: 120px;
+  font-size: 20px;
+  font-size: large;
+}
+
+.register{
+  position: absolute;
+  /* padding:150px; */
+  font-size: 20px;
+  font-family: "Sofia", sans-serif;
+  top:120px;
+  right: 200px; 
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 500px;
+  top: 25px;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  background-color: #bbb;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  vertical-align: text-bottom;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/ets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* .col-md-5 {
+  width: 41.66666667%;
+  float: left;
+}
+
+.cont {
+  padding-top: 90px;
+}
+
+.cont .section-title {
+  padding: 0;
+}
+.cont .section-title {
+  padding: 0;
+}
+.section-title {
+  padding: 0 87px 37px;
+  position: relative;
+} */
+
+/* .h2{
+  color: #444;
+  line-height: 28px;
+  margin: 0;
+    margin-bottom: 0px;
+  font-family: 'Trajan Pro', sans-serif;
+  font-weight: 300;
+} */
+
+.footer .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.footer .box-container .box{
+  flex:1 1 25rem;
+}
+
+.footer .box-container .box h3{
+  color:rgb(89, 62, 207);
+  font-size: 1.5rem;
+  padding:1rem 0;
+}
+
+.footer .box-container .box p{
+  color:rgb(21, 230, 160);
+  font-size: 0.9rem;
+  padding:1rem 0;
+}
+
+.footer .box-container .box a{
+  display: block;
+  color:rgb(21, 230, 160);
+  font-size: 1rem;
+  padding:1rem 0;
+}
+
+.footer .box-container .box a:hover{
+  text-decoration: underline;
+  color:rgb(243, 243, 23);
+}
+
+.footer .credit{
+  font-size: 2rem;
+  padding:2rem 1rem;
+  margin-top: 2rem;
+  border-top: .15rem solid black;
+  text-align: center;
+  font-weight: normal;
+}
+
+.footer .credit span{
+  color:var(--turquoise);
+}
+
+.scroll-top{
+  position: fixed;
+  bottom: 7.5rem; right:2rem;
+  z-index: 1000;
+  font-size: 3.5rem;
+  background:rgba(0,255,0,.1);
+  color:var(--green);
+  border-radius: .5rem;
+  border:.1rem solid rgba(0,0,0,.1);
+  padding:.5rem 1.5rem;
+  display: none;
+}
+
+.scroll-top:hover{
+  background:var(--turquoise);
+  color:#fff;
+}
+
+
+
+

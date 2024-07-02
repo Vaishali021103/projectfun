@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+:root{
+  --turquoise: #30D5C8;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+*::selection{
+  background: var(--turquoise);
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+section{
+  padding:1.5rem 9%;
+}
+
+/* body{
+  background-image: url(./images/imgback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(80%);
+  opacity: 0.9;      
+} */
+
+.header-1,
+.header-2
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+
+
+
+
+
+  
+  padding:2rem 9%;
+  background:var(--turquoise);
+}
+.header-1{
+    border-bottom: .5px solid black;
+    padding: 15px
+  }
+  
+  
+.header-1 span{
+    font-weight: 500;
+    color:#fff;
+    font-size: 20px;
+}
+  
+  .header-1 a{
+    padding:0 .7rem;
+    color:#fff;
+    font-size: 20px;
+  }
+  
+  .header-1 a:hover{
+    color:yellow;
+  }
+  
+  .header-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: max-content;
+    padding: 5px;
+  }
+  
+  .list a{
+    list-style: none;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding-right: 9px 0;
+    margin-right: 9px;
+    color: rgb(19, 87, 189);
+    transition: 0.2s ease-out;
+    align-items: flex-start;
+    font-size:larger;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 50px;
+    top: 10px;
+  }
+  
+.logo img {
+ position: absolute;
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ overflow: hidden;
+ margin-top: -6px;
+}
+  
+.logo h3 {
+ position: absolute;
+ left: -4px;
+ top: 70px;
+ color: rgb(12, 122, 111);
+ background-color: rgb(231, 231, 68);
+}
+  
+.col-md-5 {
+  width: 41.66666667%;
+  float: left;
+}
+
+.cont {
+  padding-top: 90px;
+  float: right;
+}
+
+.cont .section-title {
+  padding: 0;
+}
+.cont .section-title {
+  padding: 0;
+}
+.section-title {
+  padding: 0 87px 37px;
+  position: relative;
+} 
